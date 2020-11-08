@@ -5,8 +5,9 @@ body{background:  rgb(252, 252, 252);}
 .navigation>ul>li>a{text-decoration: none;display: block;}
 .nav-text>a{color: rgb(151, 151, 151);font-size: 16px;font-weight: 300;letter-spacing: -0.5px;}
 .nav-icon{border-left: 1px solid rgba(151, 151, 151, 0.15)}
-.nav-title{color: rgb(48,48,48);font-weight: 900;font-size: 24px;text-align: center;letter-spacing: 1.5px}
-.nav-subtitle{color: rgb(0, 160, 255);font-size: 16px;font-weight: 400;text-align: center;letter-spacing: 1.5px}
+.nav{padding-left:2%}
+.nav-title{color: rgb(48,48,48);font-weight: 900;font-size: 24px;letter-spacing: 1.5px}
+.nav-subtitle{color: rgb(0, 160, 255);font-size: 16px;font-weight: 400;letter-spacing: 1.5px}
 
 .sidebar{background: rgb(48, 48, 48);min-height: 42.5rem;padding:1% 0%}
 .parent{padding: 10% 0%;border: 1px solid rgba(249, 249, 249, 0.05);}
