@@ -1,4 +1,3 @@
-console.log('hello');
 $(document).ready(function () {
     var card=false;
     $(window).resize(function () {
@@ -68,7 +67,7 @@ function toggleHamburger(){
   
   sidebar.classList.toggle("desktop")
   ham.classList.toggle("showClose")  
-section.classList.toggle("slds-size_10-of-12")
+section.classList.toggle("slds-size_9-of-12")
     setTimeout(()=>{
         sidebar.classList.toggle("showbar")
     },10)
