@@ -33,10 +33,12 @@ body{background:  rgb(252, 252, 252);}
 #ham {z-index: 1000;  border: none;  cursor: pointer;  background-color: transparent;}
 .sidebar {  transform: translateX(-100%);  transition: transform 0.2s ease;}
 .showbar{transform: translateX(0);transition-duration: 1s;}
+.mobile-nav{display: block}
 .block{display: block}
 @media(min-width:1024px){
     .mobile{display:none;}
     .desktop{display:block;}
+    .mobile-nav{display: none}
     .desktop-card{display:block;}
     .text-content{padding-top: 0; text-align: left;}
     .icon{text-align: center;padding-top: 0}
