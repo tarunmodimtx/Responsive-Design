@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="sldsstyles/salesforce-lightning-design-system.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="context-bar slds-grid">
+        <div class="slds-size_1-of-12 mobile">
+            <button class="slds-button slds-button_neutral slds-p-vertical_medium" id="ham">
+                <span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed">
+                    <svg class="slds-icon slds-icon_medium " aria-hidden="true" style="fill:black">
+                        <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#rows"></use>
+                    </svg>
+                </span>
+            </button>
+        </div>
+        <div class="slds-col slds-size_2-of-12 slds-large-size_2-of-12">
+            <p class="nav-title">MTX GROUP</p>
+            <p class="nav-subtitle">PLATFORM</p>
+        </div>
+
+        <nav class="navigation slds-col slds-size_2-of-12 slds-large-size_5-of-12 slds-grid slds-col_bump-left">
+            <ul class="slds-grid slds-gutters slds-float_right slds-col slds-align_absolute-center slds-size_1-of-1">
+                <li class="slds-col nav-text desktop slds-large-size_3-of-12">
+                    <a href="javascript:void(0)">
+                        <span class="slds-truncate" title="Home">Dashboard</span>
+                    </a>
+                </li>
+                <li class="slds-col nav-icon slds-size_1-of-2 slds-large-size_2-of-12">
+                    <a href="javascript:void(0);" class="slds-align_absolute-center" title="Menu Item">
+                        <span class="slds-truncate" title="Menu Item">
+                            <span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed">
+                                <svg class="slds-icon slds-icon_small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#notification"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="slds-col nav-icon slds-size_1-of-2 slds-large-size_2-of-12">
+                    <a href="javascript:void(0);" class="slds-align_absolute-center" title="Menu Item">
+                        <span class="slds-truncate" title="Menu Item">
+                            <span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed">
+                                <svg class="slds-icon slds-icon_small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#user"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </a>
+                </li>
+                <li class="slds-col nav-text desktop slds-large-size_3-of-12" style="text-align: left">
+                    <a href="javascript:void(0);" class="slds-align_absolute-center" title="Menu Item">
+                        <span class="slds-truncate" title="Menu Item">Stina Gunnarsdottir</span>
+                    </a>
+                </li>
+                <li class="slds-col nav-text desktop slds-large-size_2-of-12">
+                    <span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed">
+                        <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                            <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#switch"></use>
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="slds-grid">
+        <div class="slds-col slds-size_2-of-12 sidebar desktop">
+            <div class="parent">
+                <a>SUMMARY</a>
+                <div class="child">
+                    <a>Account Summary</a>
+                </div>
+            </div>
+            <div class="parent">
+                <a>INVESTMENTS</a>
+                <div class="child">
+                    <a>My Investments</a>
+                    <a class="selected">Investor List</a>
+                </div>
+            </div>
+            <div class="parent">
+                <a>DOCUMENTS</a>
+                <div class="child">
+                    <a>My Document</a>
+                    <a>Delegate Document</a>
+                </div>
+            </div>
+            <div class="parent">
+                <a>TRANSACTIONS</a>
+                <div class="child">
+                    <a>My Transactions</a>
+                </div>
+            </div>
+            <div class="parent">
+                <a>DELEGATE</a>
+                <div class="child">
+                    <a>My Delegate</a>
+                </div>
+            </div>
+        </div>
+        <div class="slds-col slds-grid slds-large-size_10-of-12 section slds-grid_vertical">
+            <div class="slds-col slds-grid slds-size_1-of-1">
+                <div class="slds-col sec-heading slds-size_3-of-12">Investor List</div>
+                <div class="slds-col slds-size_4-of-12 ">
+                    <div class="slds-form-element">
+                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right">
+                            <svg class="slds-icon slds-input__icon slds-input__icon_right slds-icon-text-default" aria-hidden="true">
+                                <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#search"></use>
+                            </svg>
+                            <input type="text" id="text-input-id-1" placeholder="Search by Name or Email…" class="slds-input" />
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop slds-size_1-of-12">
+                    <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_icon slds-button_icon-border-filled drop dropdown" aria-haspopup="true" title="Show More">
+                            <svg class="slds-button__icon" aria-hidden="false">
+                                <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#down"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Show More</span>
+                        </button>
+                        <div class="slds-dropdown slds-dropdown_left">
+                            <ul class="slds-dropdown__list" role="menu" aria-label="Show More">
+                                <li class="slds-dropdown__item" role="presentation">
+                                    <a href="javascript:void(0);" role="menuitem" tabindex="0">
+                                        <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                                    </a>
+                                </li>
+                                <li class="slds-dropdown__item" role="presentation">
+                                    <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                                        <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop slds-size_1-of-12">
+                    <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                        <button class="slds-button slds-button_icon slds-button_icon-border-filled drop dropdown" aria-haspopup="true" title="Show More">
+                            <svg class="slds-button__icon" aria-hidden="false">
+                                <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#down"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Show More</span>
+                        </button>
+                        <div class="slds-dropdown slds-dropdown_left">
+                            <ul class="slds-dropdown__list" role="menu" aria-label="Show More">
+                                <li class="slds-dropdown__item" role="presentation">
+                                    <a href="javascript:void(0);" role="menuitem" tabindex="0">
+                                        <span class="slds-truncate" title="Menu Item One">Menu Item One</span>
+                                    </a>
+                                </li>
+                                <li class="slds-dropdown__item" role="presentation">
+                                    <a href="javascript:void(0);" role="menuitem" tabindex="-1">
+                                        <span class="slds-truncate" title="Menu Item Two">Menu Item Two</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="desktop slds-size_1-of-12" style="padding: 0% 5%">
+                    <button class="slds-button slds-button_neutral desktop selected-button" id="list" >
+                        <span class="slds-icon_container slds-icon-utility-announcement" title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#rows"></use>
+                            </svg> </span>
+                    </button>
+                     </div>
+                <div class="desktop slds-size_1-of-12">
+                    <button class="slds-button slds-button_neutral desktop" id="card" >
+                        <span class="slds-icon_container slds-icon-utility-announcement" title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#apps"></use>
+                            </svg> </span>
+                    </button>
+                </div>
+                <div class="desktop slds-size_1-of-12">
+                    <button class="slds-button slds-button_neutral desktop" id="card" >
+                        <span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#filter"></use>
+                            </svg> </span>
+                    </button>
+                </div>
+            </div>
+            <div class="slds-col slds-grid slds-size_1-of-1">
+                <div class="container slds-grid slds-grid_vertical slds-align_absolute-center slds-wrap slds-col slds-size_1-of-1">
+                    <div class="desktop-card slds-col slds-grid slds-large-size_11-of-12">
+                        <div class="slds-col slds-grid slds-large-size_12-of-12">
+                            <div class="slds-col slds-size_1-of-12"></div>
+                            <div class="slds-col slds-size_3-of-12">Name</div>
+                            <div class="slds-col slds-size_2-of-12">Total Contribution</div>
+                            <div class="slds-col slds-size_2-of-12">Total Distributions</div>
+                            <div class="slds-col slds-size_2-of-12">Total Balance</div>
+                            <div class="slds-col slds-size_1-of-12">Details</div>
+                            <div class="slds-col slds-size_1-of-12"></div>
+                        </div>
+                    </div>
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12 ">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/1.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Ivan Magalhães</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/5.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Uesugi Suzuki</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/4.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Zoe Miller</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/3.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Iruka Akuchi</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/2.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Sofia Manzano</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/6.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Sofia Manzano</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/7.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Sofia Manzano</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+                    <article class="slds-col slds-size_1-of-1 card slds-grid slds-wrap slds-large-size_11-of-12">
+                        <div class="slds-col slds-size_1-of-1 icon slds-large-size_1-of-12 slds-large-order_12"><span class="slds-icon_container slds-icon-utility-announcement " title="Description of icon when needed"> <svg class="slds-icon slds-icon_xx-small " aria-hidden="true" style="fill:black">
+                                    <use xlink:href="sldsstyles/icons/utility-sprite/svg/symbols.svg#threedots"></use>
+                                </svg> </span></div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center slds-large-size_1-of-12">
+                            <div class="slds-col slds-size_1-of-3 image" style="background: url(images/8.jpg)"></div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_3-of-12">
+                            <p class="title-main slds-size_1-of-1">Sofia Manzano</p>
+                            <p class="title-sub slds-size_1-of-1 mobile">abcdef@xyz.com</p>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12">
+                            <p class="title-sub slds-size_1-of-1 mobile">Total Contributions</p>
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_2-of-12 desktop-card">
+                            <p class="title-main slds-size_1-of-1">$ 821,243</p>
+                        </div>
+                        <div class="slds-col slds-align_absolute-center text-content slds-wrap slds-large-size_1-of-12 desktop-card">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View
+                            </a>
+                        </div>
+                        <div class="slds-align_absolute-center slds-size_1-of-1 footer mobile">
+                            <a class="slds-card__footer-action" href="javascript:void(0);">View Details
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
