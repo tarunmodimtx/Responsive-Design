@@ -14,6 +14,9 @@ $(document).ready(function () {
      }
         if (viewportWidth > 1024) {
         $(".child").css("display","block")
+        $(".sidebar").addClass("desktop")
+        $(".sidebar").removeClass("showbar")
+        $(".section").removeClass("slds-size_9-of-12")
             if(card){
         $(".container").removeClass("slds-grid_vertical");
             }
@@ -60,14 +63,14 @@ $(document).ready(function () {
   $(".dropdown").click(function(){
      $(this).parent().toggleClass("slds-is-open");
   });
+    
 var sidebar = document.querySelector(".sidebar");
 var section = document.querySelector(".section");
 var ham = document.getElementById("ham");
 function toggleHamburger(){
   
-  sidebar.classList.toggle("desktop")
-  ham.classList.toggle("showClose")  
-section.classList.toggle("slds-size_9-of-12")
+    sidebar.classList.toggle("desktop")
+    section.classList.toggle("slds-size_9-of-12")
     setTimeout(()=>{
         sidebar.classList.toggle("showbar")
     },10)
@@ -75,13 +78,12 @@ section.classList.toggle("slds-size_9-of-12")
 }
 ham.addEventListener("click", toggleHamburger)
     
+    
 var classname = document.getElementsByClassName("parent");
-
 var myFunction = function() {
  var x=this.children[1];
   x.classList.toggle("block") 
 };
-
 for (var i = 0; i < classname.length; i++) {
     classname[i].addEventListener('click', myFunction);
 }

@@ -9,7 +9,7 @@ body{background:  rgb(252, 252, 252);}
 .nav-title{color: rgb(48,48,48);font-weight: 900;font-size: 24px;letter-spacing: 1.5px}
 .nav-subtitle{color: rgb(0, 160, 255);font-size: 16px;font-weight: 400;letter-spacing: 1.5px}
 
-.sidebar{background: rgb(48, 48, 48);min-height: 42.5rem;padding:1% 0%}
+.sidebar{background: rgb(48, 48, 48);min-height: 80vh;padding:1% 0%}
 .parent{padding: 10% 0%;border: 1px solid rgba(249, 249, 249, 0.05);}
 .child{display:none;padding: 3% 0%;}
 .child>a:hover{background: linear-gradient(90deg, rgba(0, 160, 255,0.4) 0%, rgba(255, 255, 255, 0) 100%);border-left: 5px solid rgb(0, 160, 255);}
@@ -48,6 +48,7 @@ body{background:  rgb(252, 252, 252);}
     .container:first-child>div{color: rgb(146, 146, 146);font-size: 14px;letter-spacing: 0px;border: none;border-bottom: 1px solid rgba(151, 151, 151, 0.15);padding: 1%}
     
     .sidebar{background: linear-gradient(-45deg, rgb(239, 243, 248) 0%, rgb(231, 246, 255) 100%);min-height: 42.5rem;padding:1% 0%;transform: translateX(0);}
+    
     .child{display: block}
     .parent{padding:3% 0%;}
     .parent>a{color: rgb(0, 160, 255);padding-left: 25%}
